@@ -1,4 +1,4 @@
-# Emotion Restaurant Recommend System
+# Children's English Learning Platform
 유아 영어학습 플랫폼
 
 ## 소개
