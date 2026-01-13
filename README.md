@@ -36,7 +36,6 @@
 
 ## 연락처
 - 이메일: duddn7414@naver.ocm
-- 이슈 트래커: GitHub Issues
 
 # Reference
 - API 공식 문서: 00
