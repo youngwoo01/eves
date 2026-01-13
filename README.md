@@ -41,6 +41,6 @@
 # Reference
 - API 공식 문서: 00
 
-# benchmarking
+# Benchmarking
 - https://www.ebs.co.kr (레이아웃 및 정보구조)
 - https://junior.mbest.co.kr (유아 친화적 UI)
