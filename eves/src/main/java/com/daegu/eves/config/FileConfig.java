@@ -1,0 +1,30 @@
+package com.daegu.eves.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+
+@Configuration
+public class FileConfig {
+
+	@Value("#{infoProperty['uploadfile.size']}")
+	private long fileSize;
+	
+	@Value("#{infoProperty['uploadfile.encoding']}")
+	private String fileEncoding;
+	
+	@Bean
+	public CommonsMultipartResolver multipartResolver() {
+		System.out.println("FileConfig multipartResolver()");
+		CommonsMultipartResolver multipartResolver=	new CommonsMultipartResolver();
+		multipartResolver.setMaxUploadSize(fileSize);
+		multipartResolver.setDefaultEncoding(fileEncoding);
+		return multipartResolver;	
+	}
+}
+
+
+
+
+
